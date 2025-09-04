@@ -1,0 +1,904 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jagannath University</title>
+     <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_drop_down" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_drop_down" />
+        <style>
+          
+* {
+    margin: 0;
+    font-family: arial;
+    border: border-box;
+  }
+
+  .header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+  }
+
+  .navbar {
+    height: 33px;
+    width: 100%;
+    font-size: 1rem;
+    background-color: #cb4c06;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+  }
+
+
+  .icon {
+    padding-left: 2rem;
+    color: aliceblue;
+  }
+
+  .icon a {
+    color: #fff;
+    padding-left: 5px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 200;
+
+
+  }
+
+  a {
+    color: #fff;
+    padding-left: 5px;
+    text-decoration: none;
+    font-family: Arial;
+
+  }
+
+  .info {
+    height: 100px;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo img {
+    height: 50px;
+
+  }
+
+  .logo {
+    padding-left: 8rem;
+  }
+
+  .para {
+    color: #cb4c06;
+    font-size: small;
+    font-weight: 600;
+  }
+
+  .apply-now {
+    padding-right: 8rem;
+
+  }
+
+  .apply-now button {
+    height: 50px;
+    width: 150px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #fff;
+    background-color: #cb4c06;
+    border: none;
+    border-radius: 5px;
+
+  }
+
+  .enquire-now {
+    padding-right: 8rem;
+
+  }
+
+  .enquire-now button {
+    position: absolute;
+    position: fixed;
+    left: 1425px;
+    top: 230px;
+    /* margin-left: 1425px;
+  margin-top: 200px; */
+    transform: rotate(90deg);
+    height: 45px;
+    width: 150px;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #fff;
+    background-color: #cb4c06;
+    border: none;
+    border-radius: 5px;
+
+  }
+
+  .items {
+    height: 40px;
+    width: 100%;
+    background-color: #EAEAEA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+
+
+
+  }
+
+  .items i {
+    font-size: 0.7rem;
+    color: #000000A6;
+    padding-right: 10px;
+
+  }
+
+  .items a {
+    color: #000000A6;
+  }
+
+  .slider img {
+
+    height: 570px;
+    width: 100%;
+  }
+
+  .slider-2 {
+    height: 770px;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .about-1 img {
+    height: 570px;
+    width: 285px;
+    margin-left: 50px;
+
+  }
+
+  .about-2 img {
+    height: 570px;
+    width: 285px;
+    margin-top: 6rem;
+    padding: 51px 25px 60px;
+
+
+  }
+
+  .summary {
+    height: 560px;
+    width: 560px;
+    background-color: #fff;
+    padding-right: 70px;
+  }
+
+  .summary h2 {
+    padding-bottom: 50px;
+    font-size: 2.5rem;
+  }
+
+  .summary h1 {
+    padding-bottom: 25px;
+  }
+
+  .summary p {
+    font-size: 1.2rem;
+    padding-bottom: 50px;
+    text-align: justify;
+    font-family: 'Sora', sans-serif;
+  }
+
+  .paras {
+
+    font-size: 1.2rem;
+    text-align: justify;
+    padding-bottom: 50px;
+
+
+
+
+  }
+
+  .summary .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 160px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #fff;
+    background-color: #cb4c06;
+    border: none;
+    border-radius: 5px;
+  }
+
+  .btn i {
+    padding-left: 10px;
+    font-size: medium;
+  }
+
+  .events {
+    height: 465px;
+    width: 100%;
+    background-color: #fff;
+    padding: 100px 0 100px 0;
+
+  }
+
+  .events h2 {
+    text-align: center;
+    font-size: 2.5rem;
+  }
+
+  .main-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0 15px 0;
+
+  }
+
+  .box {
+    height: 280px;
+    width: 280px;
+    border: 2px dashed black;
+    margin: 15px;
+    border-radius: 20px;
+    padding: 20px;
+    font-size: 1.2rem;
+
+
+
+  }
+
+  .view {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 100px;
+  }
+
+  .view-all {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 130px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #fff;
+    background-color: #cb4c06;
+    border: none;
+    border-radius: 5px;
+
+  }
+
+.circle {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: 2px solid black;
+    margin: 8px 80px 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: #cb4c06;
+    border: none;
+  }
+
+  .date {
+    font-size: 2.7rem;
+    color: #fff;
+    font-weight: 600;
+  }
+
+  .month {
+    font-size: 1.3rem;
+    color: #fff;
+  }
+
+  .faculties img {
+
+    height: 570px;
+    width: 100%;
+
+  }
+
+  .join {
+    height: 200px;
+    width: 100%;
+    background-color: #cb4c06;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+
+  }
+
+  .join img {
+    height: 95px;
+    margin-left: 20px;
+
+  }
+
+  .artical {
+    height: 595px;
+    width: 100%;
+    background-color: aqua;
+    padding: 100px 0 100px 0;
+    background-color: #fff;
+
+  }
+
+  .artical h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    padding: 0px 0px 8px;
+  }
+
+  .main-blog {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+
+  }
+
+  .blog {
+    height: 390px;
+    width: 390px;
+    padding: 20px;
+    margin-bottom: 25px;
+    border: 2px solid black;
+    margin-left: 20px;
+    border-radius: 5px;
+    background-color: #EAEAEA;
+    border: none;
+
+  }
+
+  .blog img {
+    height: 200px;
+    width: 100%;
+    border-radius: 5px;
+
+  }
+
+  .blog .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 180px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #fff;
+    background-color: #cb4c06;
+    border: none;
+    border-radius: 5px;
+
+  }
+
+  .blog p {
+    margin: 0px 0px 17px;
+    font-weight: 600;
+    color: #0E2A46;
+    padding-left: 10px;
+
+  }
+
+  .blog h3 {
+    margin: 0px 0px 55px;
+    color: #0E2A46;
+  }
+
+  .blog i {
+    margin-right: 5px;
+    color: #cb4c06;
+  }
+
+  .view-all-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 130px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #fff;
+    background-color: #cb4c06;
+    border: none;
+    border-radius: 5px;
+    margin-top: 30px;
+
+  }
+
+  .community {
+    height: 451px;
+  background-color: #fff;
+  }
+
+  .main-card {
+    height: 365px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+
+  }
+
+  .card {
+    height: 345px;
+    width: 635px;
+    background-color: #cb4c06;
+    border: 2px solid black;
+    margin-right: 20px;
+    border: none;
+  }
+
+  .intro {
+    display: flex;
+    padding-top: 50px;
+    padding-left: 50px;
+
+  }
+
+  .name {
+    padding: 30px 0px 50px 30px;
+     color: #fff;
+
+  
+  }
+
+  .name h3 {
+    margin-bottom: 8px;
+    font-size: 1.5rem;
+
+    
+
+
+  }
+
+  .name p {
+    font-size: 1rem;
+  }
+
+  .community h2 {
+    margin-bottom: 50px;
+  }
+
+  .card img {
+    height: 100px;
+    width: 100px;
+    border: 5px solid black;
+    border-radius: 50%;
+    border-color: coral;
+  }
+
+  .rating {
+    padding-left: 50px;
+  }
+
+  .rating i {
+    color: yellow;
+   
+    padding-bottom: 30px;
+  }
+
+  .review{
+    padding: 0px 50px 0px 50px;
+    font-size: 1.2rem;
+    color: #fff;
+    text-align: justify;
+  }
+
+  .footer{
+    height: 398px;
+    width: 100%;
+    background-color:#0E2A46;
+  
+  }
+  .box-3{
+ display: flex;
+   justify-content:center ;
+   align-items: center;
+   padding: 51px 0px 12px;
+  }
+.list{
+  height: 223px;
+  width: 330px;
+  color: #FFFFFFB3;
+}
+  .list img{
+    height: 70px;
+   width: 168px;
+   border-radius: 5px;
+  }
+  .list h3{
+    color: #cb4c06;
+    padding: 15px 0px 15px 0px;
+    font-weight: 600;
+    font-size: 1.3rem;
+    margin: 17px 0px 8px 0px;
+    
+  }
+
+  .list ul li{
+   list-style: none;
+   font-size: 1rem;
+  }
+
+  .social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8rem;
+    padding: 17px 12px;
+    margin: 0px 413px;
+  
+  }
+
+  .social i{
+    margin-left: 10px;
+  }
+ .copy{
+  display: flex;
+  padding-top: 10px;
+  justify-content: space-between;
+   padding: 17px 12px;
+   padding: 0px 100px;
+ line-break: loose;
+  
+ }
+ .one{
+  padding-top: 10px;
+  color: #fff;
+ }
+        </style>
+</head>
+<body>
+  <div class="container">
+ <div class="header">
+<div class="navbar">
+  <div class="nav-right">
+    <i class="fa-solid fa-phone-volume icon"><a href="#">+91 9620619966</a></i>  
+    <i class="fa-solid fa-envelope-open icon"><a href="#">info@jagannathuniversity.org</a></i>
+  </div>
+   <div class="nav-left">
+    <i class="fa-solid fa-user icon "><a href="#">Addmissions 2025-26</a></i>
+       <i class="fa-solid fa-headset icon"><a href="#">Contact Us</a></i>
+
+   </div>
+      
+ </div> 
+ <div class="info">
+ <div class="logo">
+  <img src="photos/6.png">
+  <img src="photos/3.png">
+  <div class="para">
+    Accredited by NAAC "A" Grade Granted 12-B status by UGC
+  </div>
+ 
+ </div>
+ <div class="apply-now">
+  <button>Apply Now!</button>
+ </div>
+ </div>
+
+ <div class="items">
+ <a href="#">About Us <i class="fa-solid fa-caret-down"></i></a>
+ <a href="#">Addmissions <i class="fa-solid fa-caret-down"></i></a>
+ <a href="#">Faculties <i class="fa-solid fa-caret-down"></i></a>
+ <a href="#">Life @ jnu <i class="fa-solid fa-caret-down"></i></a>
+ <a href="#">Student Zone <i class="fa-solid fa-caret-down"></i></a>
+  <a href="#">Examination <i class="fa-solid fa-caret-down"></i></a>
+  <a href="#">Placements <i class="fa-solid fa-caret-down"></i></a>
+  <a href="#">Research <i class="fa-solid fa-caret-down"></i></a>
+  <a href="#">Events <i class="fa-solid fa-caret-down"></i></a>
+  <a href="#">JUIC</a>
+  <a href="#">JUEE-2025</a>
+
+  
+ </div>
+ </div>
+ 
+
+ <div class="slider">
+  <img src="photos/5.png">
+  <div class="enquire-now">
+  <button>Enquire Now</button>
+ </div>
+ </div>
+
+<div class="slider-2">
+ <div class="about-1">
+ <img src="photos/7.png">
+ </div>
+ <div class="about-2">
+ <img src="photos/8.png">
+ </div>
+<div class="summary">
+  <h2>Welcome to Jagan Nath University</h2>
+  <h1>NAAC accredited University in Jaipur, Rajasthan</h1>
+  <p>Jagan Nath University, Jaipur has been established by an Act of the 
+    Rajasthan State Legislature (Act No. 19 of 2008) on April 16,2008,
+     approved under section 2(f) by the UGC Act, 1956, accredited by NAAC
+      (2nd Cycle) with "A" grade in 2022 and is member of the  Association of 
+      Indian Universities (AIU). The University has also acquired a distinctive
+       status in agriculture educationof having been accredited by ICAR for 5
+        years its B.Sc. (Hons.) Agriculture program.</p>
+      <div class="paras">| The University is offering UG and PG programs in the areas of...</div>
+      <div class="btn">About Us <i class="fa-solid fa-arrow-right"></i></div>
+</div>
+</div>
+
+<div class="events">
+  <h2>Latest Events & Updates</h2>
+  <div class="main-box">
+    <div class="box">
+      <div class="circle">
+        <span class="date">1</span>
+        <span class="month">Mar.</span>
+      </div>
+      Innovation and Buissness Solutions for Heathcare
+    </div>
+     <div class="box">
+       <div class="circle">
+         <span class="date">29</span>
+        <span class="month">Apr.</span>
+       </div>
+       "How to prepare for CAT" on 28th March 2025
+     </div>
+      <div class="box">
+         <div class="circle">
+          <span class="date">6</span>
+        <span class="month">Apr.</span>
+         </div>
+         Internation Workshop on Mastering the Art & Science of Critical Care
+      </div>
+      
+       <div class="box">
+         <div class="circle">
+           <span class="date">28</span>
+        <span class="month">Mar.</span>
+         </div>
+          4th Jagan Nath Gupta Memorial for Moot Court Compition,2025
+       </div>
+      
+       </div>
+       <div class="view">
+       <div class="view-all">View All</div>
+       </div>
+  
+</div>
+<div class="faculties">
+  <img src="photos/law.png">
+</div>
+
+<div class="events">
+  <h2>Latest Events & Updates</h2>
+  <div class="main-box">
+    <div class="box">
+      <div class="circle">
+        <span class="date">12</span>
+        <span class="month">july.</span>
+      </div>
+      Innovation and Buissness Solutions for Heathcare
+    </div>
+     <div class="box">
+       <div class="circle">
+         <span class="date">31</span>
+        <span class="month">Aug.</span>
+       </div>
+       "How to prepare for CAT" on 28th March 2025
+     </div>
+      <div class="box">
+         <div class="circle">
+          <span class="date">15</span>
+        <span class="month">May.</span>
+         </div>
+         Internation Workshop on Mastering the Art & Science of Critical Care
+      </div>
+      
+       <div class="box">
+         <div class="circle">
+           <span class="date">28</span>
+        <span class="month">Mar.</span>
+         </div>
+          4th Jagan Nath Gupta Memorial for Moot Court Compition,2025
+       </div>
+      
+       </div>
+       <div class="view">
+       <div class="view-all">View All</div>
+       </div>
+
+       <div class="join">
+        <img src="photos/11.png">
+        <img src="photos/12.png">
+        <img src="photos/13.png">
+        <img src="photos/14.png">
+        <img src="photos/15.png">
+        <img src="photos/16.png">
+       </div>
+
+       <div class="artical">
+        <h2>Articles & Blogs</h2>
+        <div class="main-blog">
+         <div class="blog">
+          <img src="photos/21.png">
+          <p><i class="fa-regular fa-calendar-days"></i> Feburary 2, 2025</p>
+          <h3>Top B.Tech Specializations Available Through CUET</h3>
+          <div class="btn">About Us <i class="fa-solid fa-arrow-right"></i></div>
+        </div>
+        <div class="blog">
+          <img src="photos/22.png">
+          <p><i class="fa-regular fa-calendar-days"></i> Feburary 2, 2025</p>
+          <h3>Top M.Tech Specialisations for B.Tech CSE Graduates</h3>
+          <div class="btn">About Us <i class="fa-solid fa-arrow-right"></i></div>
+        </div>
+        <div class="blog">
+          <img src="photos/23.png">
+          <p><i class="fa-regular fa-calendar-days"></i> Feburary 2, 2025</p>
+          <h3>BPT Course: Advance Your Career in Physical Therapy</h3>
+          <div class="btn">Read More <i class="fa-solid fa-arrow-right"></i></div>
+        </div>
+        
+        </div>
+        <div class="view">
+       <div class="view-all-2">View All</div>
+       </div>
+        
+       </div>
+
+<div class="community">
+        <h2>CEATING A COMMUNITY OF LIFE LONG LEARNERS.</h2>
+        <div class="main-card">
+          <div class="card">
+            <div class="intro">
+              <img src="photos/2.jpg">
+            <div class="name">
+              <h3>AQUIB JAWED</h3>
+            <p>BCA-CS,2023-26 Batch</p>
+            </div>
+                </div>
+              <div class="rating">
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            </div>
+            <div class="review">
+             JaganNath University offers a blend of learning, 
+             amusement and integration of enduring principles.
+              As a Computer Engineering student it provides a 
+              wide arena of the field and thus I get to learn something
+               new with every subject.
+            </div>
+           
+        
+           
+            
+          </div>
+          <div class="card">
+              <div class="intro">
+              <img src="photos/friend (2).jpg">
+            <div class="name">
+              <h3>ASAD ARMAN</h3>
+            <p>BCA-CS,2023-26 Batch</p>
+            </div>
+                </div>
+              <div class="rating">
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            </div>
+            <div class="review">
+            JaganNath University is good at education. The management 
+            and the trustees help the students in their
+             placements and provide their supports
+              for the students in their career.
+            </div>
+          </div>
+          </div>
+        </div>
+       <div class="footer">
+        <div class="box-3">
+          <div class="list">
+          <img src="photos/6.png">
+          <h3>Jagan Nath University</h3>
+          <p> NH-12, Chaksu Bypass</p>
+          <p> Tonk Road, Jaipur</p>
+            <p>Rajasthan - 303901</p>
+        </div>
+          <div class="list">
+           
+            <ul>
+               <h3>Student Helpline</h3>
+              <li><a href="#">Committee for SC/ST/OBC</a></li>
+               <li><a href="#"></a>Minority Cell</li>
+                <li><a href="#"></a>Student's Grievance Redressal Committee</li>
+                 <li><a href="#"></a>Internal Complaint Committee</li>
+                  <li><a href="#"></a>Anti Ragging Committee</li>
+            </ul>
+            
+          </div>
+            <div class="list">
+              
+              <ul>
+                <h3>Important Links</h3>
+              <li><a href="#">UGC Public Self-Disclosure</a></li>
+               <li><a href="#"></a>NIRF</li>
+                <li><a href="#"></a>New Initiatives</li>
+                 <li><a href="#"></a>ICAR Documents</li>
+                  <li><a href="#"></a>PIO & Appellate Authority</li>
+                  <li><a href="#"></a>Public Notices</li>
+            </ul>
+            
+            </div>  
+            <div class="list">
+            <ul>
+               <h3>Quick Links</h3>
+              <li><a href="#">Contact Us</a></li>
+               <li><a href="#">Career</a></li>
+                <li><a href="#"></a>Alumni</li>
+                 <li><a href="#"></a>Online Fee Payment</li>
+                  <li><a href="#"></a>Apply Online</li>
+                  <li><a href="#"></a>How to Reach</li>
+                <li><a href="#"></a>Blogs</li>
+            </ul>
+            </div>
+        </div>
+        
+            <div class="social">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+             <a href="#"><i class="fa-brands fa-twitter"></i></a>
+             <a href="#"><i class="fa-brands fa-instagram"></i></a>
+
+<a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+      </div>
+      <hr>
+      <div class="copy">
+      <div class="one">
+        Copyright @ 2025. All rights reserved.
+      </div>
+      <div class="one">
+        <a href="#">Disclaimer</a>
+         <a href="#">Privacy Policy</a>
+          <a href="#">Terms</a>
+      </div>
+  
+
+      </div>
+          </div>
+        
+    </div>
+
+</div>
+</body>
+</html>
